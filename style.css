@@ -1,0 +1,232 @@
+/*Definições da foto*/
+
+img#myFoto{
+	margin-top: 25px; /*margin superior*/
+	width: 144px; /*largura da imagem*/
+	height: 144px; /*altura da imagem*/
+}
+
+/*Estilo dos textos do Aside lateral esquerdo*/
+#nome{
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0,0,0,.3); /*leve sombreado no titulo*/
+}
+
+.apresentacao{
+	color: #fff;
+	text-align: justify; /*Texto justificado*/
+	line-height: 2;
+}
+
+
+/*Cor e Espaçamento horizontal dos icones de contato 'tab'*/
+a{
+	color: #fff;
+	padding-left: 10px;
+
+}
+a#rodape{
+    
+    color:white;
+}
+
+/*Altura da tela*/
+.row.content {
+    height: 100%;
+}
+    
+/* Cor e altura da section lateral esquerda */
+ .sidenav {
+	background-color: #009f9f;
+    height: 100%;
+    padding: 0px 20px 5px 20px; /*superior, direito, inferior, esquerdo*/
+
+}
+
+/*Timeline educação, expereiencia profissional, intresses,...*/
+/*espaçamento superior da timeline*/
+.espaco{
+  height: 45px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0 20px;
+    list-style: none; /*popriedade da lista sem os ponto de marcação*/
+}
+
+h5{
+    color: #F0FFF0;
+}
+
+/*Linha vertical da timeline*/
+.timeline:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /*centralizar linha */
+    width: 3px;
+    margin-left: -1.5px;
+    background-color: #778899;
+}
+
+/*Definições de cada linha da timeline, como margem, posição, espaçamento, ...*/
+.timeline > li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+/*Definições dos balões da timeline, posição, borda, ...*/
+.timeline > li > .timeline-panel {
+    float: left;
+    position: relative;
+    width: 46%;
+    padding: 20px;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+}
+
+.timeline > li > .timeline-panel:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    border-top: 15px solid transparent;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #ccc;
+}
+
+.timeline > li > .timeline-panel:after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    border-top: 14px solid transparent;
+    border-right: 0 solid #009f9f;
+    border-bottom: 14px solid transparent;
+    /*borda que aponta pra caixa*/
+    border-left: 14px solid #027572 ;
+}
+
+/*icones sobre cada um dos titulos*/
+.timeline > li > .timeline-badge {
+    z-index: 100;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 50% 50% 50% 50%;/*bordas das div da timeline*/
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 50px;
+    color: #fff;
+    background-color: #2F4F4F;
+}
+
+
+/*Balão invertido*/
+.timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+/*Cores dos icones centrais da timeline, */
+.timeline-badge.primary {
+    background-color: #2e6da4 !important;/*azul escuro*/
+}
+
+.timeline-badge.success {
+    background-color: #3f903f !important;/*verde*/
+}
+
+.timeline-badge.warning {
+    background-color: orange !important;/*laranja*/
+}
+
+.timeline-badge.danger {
+    background-color: #d9534f !important;/*vermelho*/
+}
+
+.timeline-badge.info {
+    background-color: #5bc0de !important;/*azual claro*/
+}
+
+/*Margem e cor do titulos dos balões*/
+.timeline-title {
+    margin-top: 0;
+    color: inherit;/*cor padrão do navegador*/
+}
+
+/*medida responsiva dos titulos para tela muito pequenas <=768px*/
+@media(max-width:768px) {
+  .timeline-title {
+    font-size:10pt;
+}
+}
+
+/*Margem do corpo da timeline*/
+.timeline-body > p,
+.timeline-body > ul {
+    margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+    margin-top: 3px;
+}
+
+footer#rodape {
+  border-top: 1px #027572   solid;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding-top:15px;
+  padding-bottom:0px;
+  /*cor da letra*/
+  color:white;
+  text-align:center;
+  background: #027572  ;
+  border-bottom: 1px #027572 solid;
+  clear: both;
+}
